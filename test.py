@@ -3,11 +3,11 @@ import re
 
 
 dic = open("dictionary.txt","r")
-dic.close()
 
-pattern = r'^en...y$'
+ques = 'Y'
+
+pattern = r'^en...s$'
 def test():
-    ques = 'Y'
     while(ques != 'Q'):
          for real in dic:
               match = re.match(pattern,real)
@@ -15,6 +15,6 @@ def test():
                    print(real)
               continue
          ques = 'Q'
-    return 1
+    return 0
 test()
-
+dic.close()
