@@ -4,16 +4,17 @@ import re
 
 dic = open("dictionary.txt","r")
 
-input = 'Y'
+
 pattern = r'^en...y$'
-def test(s):
-    while(s != 'Q'):
+def test():
+    ques = 'Y'
+    while(ques != 'Q'):
          for real in dic:
               match = re.match(pattern,real)
               if match:
                    print(real)
               continue
-         s = 'Q'
+         ques = 'Q'
     return 1
-test(input)
+test()
 dic.close()
