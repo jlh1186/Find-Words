@@ -6,7 +6,7 @@ dic = open("dictionary.txt","r")
 
 test = 'Y'
 pattern = r'^en..y$'
-def tet(s):
+def test(s):
     while(s != 'Q'):
          for real in dic:
               match = re.match(pattern,real)
@@ -15,5 +15,5 @@ def tet(s):
               continue
          s = 'Q'
     return 1
-tet(test)
+test(test)
 dic.close()
