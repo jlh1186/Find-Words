@@ -1,2 +1,2 @@
-# Find-Words
-Finds Words That Start With... {Pattern}
+# Find Words That Start With {Pattern}
+
