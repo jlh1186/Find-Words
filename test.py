@@ -7,7 +7,7 @@ dic = open("dictionary.txt","r")
 ques = 'Y'
 
 pattern = r'^en...s$'
-def test(cache,ques):
+def test(cache):
     while(ques != 'Q'):
          for real in dic:
               match = re.match(pattern,real)
@@ -15,6 +15,6 @@ def test(cache,ques):
                    print(real)
               continue
          ques = 'Q'
-    return 0
+    return 1
 test(ques)
 dic.close()
