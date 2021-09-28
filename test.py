@@ -6,11 +6,13 @@ dic = open("dictionary.txt","r")
 
 test = 'Y'
 pattern = r'^p'
-while(test != 'Q'):
-    for real in dic:
-            match = re.match(pattern,real)
-            if match:
-                print(real)
-            continue
-    test = 'Q'
+def tet(s):
+    while(test != 'Q'):
+         for real in dic:
+              match = re.match(pattern,real)
+              if match:
+                   print(real)
+              continue
+         test = 'Q'
+tet(test)
 dic.close()
