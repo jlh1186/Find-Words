@@ -3,7 +3,7 @@ import re
 
 
 dic = open("dictionary.txt","r")
-
+dic.close()
 
 pattern = r'^en...y$'
 def test():
@@ -17,4 +17,4 @@ def test():
          ques = 'Q'
     return 1
 test()
-dic.close()
+
