@@ -8,6 +8,7 @@ ques = 'Y'
 
 pattern = r'^en...s$'
 def test(cache):
+    ques = 'Y'
     while(ques != 'Q'):
          for real in dic:
               match = re.match(pattern,real)
