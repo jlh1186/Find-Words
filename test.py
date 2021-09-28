@@ -5,7 +5,7 @@ import re
 dic = open("dictionary.txt","r")
 
 test = 'Y'
-pattern = r'^p'
+pattern = r'^en..$y'
 def tet(s):
     while(s != 'Q'):
          for real in dic:
