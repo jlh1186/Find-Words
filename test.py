@@ -4,7 +4,7 @@ import re
 
 dic = open("dictionary.txt","r")
 
-test = 'Y'
+input = 'Y'
 pattern = r'^en...y$'
 def test(s):
     while(s != 'Q'):
@@ -15,5 +15,5 @@ def test(s):
               continue
          s = 'Q'
     return 1
-test(test)
+test(input)
 dic.close()
