@@ -14,6 +14,6 @@ def tet(s):
                    print(real)
               continue
          s = 'Q'
-    return real
+   return 1
 tet(test)
 dic.close()
