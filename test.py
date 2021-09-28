@@ -7,12 +7,12 @@ dic = open("dictionary.txt","r")
 test = 'Y'
 pattern = r'^p'
 def tet(s):
-    while(test != 'Q'):
+    while(s != 'Q'):
          for real in dic:
               match = re.match(pattern,real)
               if match:
                    print(real)
               continue
-         test = 'Q'
+         s = 'Q'
 tet(test)
 dic.close()
