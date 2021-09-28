@@ -4,8 +4,7 @@ import re
 
 dic = open("dictionary.txt","r")
 
-test = ''
-test = input()
+test = 'Y'
 pattern = r'^p'
 while(test != 'Q'):
     for real in dic:
@@ -13,5 +12,5 @@ while(test != 'Q'):
             if match:
                 print(real)
             continue
-    test = input()
+    test = 'Q'
 dic.close()
