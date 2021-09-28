@@ -8,6 +8,7 @@ ques = 'Y'
 
 pattern = r'^en...s$'
 def test():
+    dic = open("dictionary.txt","r")
     ques = 'Y'
     while(ques != 'Q'):
          for real in dic:
